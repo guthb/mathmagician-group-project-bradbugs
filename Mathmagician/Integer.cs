@@ -8,5 +8,30 @@ namespace Mathmagician
 {
     public class Integer
     {
+
+        public List<int> ListIntegers(int input)
+        {
+
+            List<int> listIntegers = new List<int>();
+         
+
+            for (int i = 0; i < input; i++)
+            {
+                listIntegers.Add(i+1);
+            }
+
+            return listIntegers;
+           
+            //throw new NotImplementedException();
+        }
+
+
+
+
+        
+        
+        
+           
     }
+
 }
