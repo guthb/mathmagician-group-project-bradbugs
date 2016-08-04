@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Mathmagician
 {
-    class Primes
+    public class Primes
     {
 
         public List<int> ReturnPrimeNumbersList(int userInput)
         {
-            throw new NotImplementedException();
+            List<int> primesList = new List<int>();
+            return primesList;
         }
 
     }
