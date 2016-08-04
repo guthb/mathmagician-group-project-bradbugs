@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace Mathmagician.Tests
 {
     [TestClass]
-    class FibonacciTest
+    public class FibonacciTest
     {   //the sum of the two preceding numbers in a sequence
         [TestMethod]
         //test that the class can be created
@@ -22,7 +22,26 @@ namespace Mathmagician.Tests
         }
 
         [TestMethod]
-       //Test the list that the numbers are added coorectly
+        //test
+        public void FibonacciEnsureIcanCreateAList()
+        {
+            // Arrange
+            Fibonacci my_fibo_list = new Fibonacci();
+            List<int> testList = new List<int>();
+
+            //Act
+
+
+            //Assert
+            Assert.IsInstanceOfType(my_fibo_list.ReturnFibinacciSequence(0), typeof(List<int>));
+
+        }
+
+
+
+
+        [TestMethod]
+        //Test the list that the numbers are added correctly
         public void FibonacciListAddtionTest()
         {
 
@@ -35,7 +54,7 @@ namespace Mathmagician.Tests
 
 
             //Assert
-            CollectionAssert.AreEqual(testList, Fibonacci.);
+            // CollectionAssert.AreEqual(testList, Fibonacci.);
 
 
 

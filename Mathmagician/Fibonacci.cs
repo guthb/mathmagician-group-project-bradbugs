@@ -14,10 +14,13 @@ namespace Mathmagician
 
         {
 
-            throw new NotImplementedException();
+            List<int> _fibancciSequencList = new List<int>();
+            //throw new NotImplementedException();
+            return _fibancciSequencList;
 
         }
 
+        
 
 
    
