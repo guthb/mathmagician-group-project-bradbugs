@@ -44,11 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="Even.cs" />
-=======
     <Compile Include="Primes.cs" />
->>>>>>> master
     <Compile Include="Fibonacci.cs" />
     <Compile Include="Integer.cs" />
     <Compile Include="Program.cs" />
