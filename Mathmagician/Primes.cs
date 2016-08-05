@@ -8,53 +8,40 @@ namespace Mathmagician
 {
     public class Primes
     {
-        public static bool IsPrime(int candidate)
+
+        public static bool isPrime(int number)
         {
-            // Test whether the parameter is a prime number.
-            if ((candidate & 1) == 0)
+            int boundary = (int)Math.Floor(Math.Sqrt(number));
+
+            if (number == 0) return false;
+            if (number == 1) return false;
+            if (number == 2) return true;
+
+            for (int i = 2; i <= boundary; ++i)
             {
-                if (candidate == 2)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                if (number % i == 0) return false;
             }
-            for (int i = 3; (i * i) <= candidate; i += 2)
-            {
-                if ((candidate % i) == 0)
-                {
-                    return false;
-                }
-            }
-            return candidate != 1;
+
+            return true;
         }
 
-        public List<int> ListPrimes(int iterations)
+        public List<int> ReturnPrimeNumbersList(int userInput)
         {
-            List<int> primes = new List<int>();
+            List<int> primesList = new List<int>();
             int i = 0;
             int j = 0;
 
-            while(i < iterations)
+            while (i < userInput)
             {
-                bool prime = IsPrime(j);
-
-                if (prime)
+                if (isPrime(j))
                 {
-                    primes.Add(j);
+                    primesList.Add(j);
                     i++;
-                    j++;
                 }
-                else
-                {
-                    j++;
-                }
+                j++;
             }
-
-            return primes;
+            return primesList;
         }
+
     }
 }
