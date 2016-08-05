@@ -33,32 +33,38 @@ namespace Mathmagician.Tests
 
 
             //Assert
-            Assert.IsInstanceOfType(my_fibo_list.ReturnFibinacciSequence(0), typeof(List<int>));
+            Assert.IsInstanceOfType(my_fibo_list.ReturnFibonacciSequence(0), typeof(List<int>));
 
         }
 
-
-
-
         [TestMethod]
-        //Test the list that the numbers are added correctly
-        public void FibonacciListAddtionTest()
+        public void FibonacciEnsureListCount()
         {
-
             // Arrange
-
+            Fibonacci my_fibo_List = new Fibonacci();
+            List<int> testListCount = new List<int>() { 1, 1, 2, 3, 5, 8, 13, 21 };
 
             //Act
-            Fibonacci fiboList = new Fibonacci();
-            List<int> testList = new List<int>() { 1, 1, 2, 3, 5, 8, 13, 21 };
 
 
             //Assert
-            // CollectionAssert.AreEqual(testList, Fibonacci.);
+            Assert.AreEqual(testListCount.Count, my_fibo_List.ReturnFibonacciSequence(8).Count);
 
+        }
 
+        [TestMethod]
+        //Test the list that the numbers are added correctly
+        public void FibonacciOutputTest()
+        {
 
+            // Arrange
+            Fibonacci fiboList = new Fibonacci();
+            List<int> testList = new List<int>() { 1, 1, 2, 3, 5, 8, 13, 21 };
 
+            //Act
+            
+            //Assert
+            CollectionAssert.AreEqual(testList, fiboList.ReturnFibonacciSequence(8));
 
         }
 
