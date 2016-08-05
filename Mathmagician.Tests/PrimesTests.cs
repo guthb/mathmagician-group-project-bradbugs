@@ -29,6 +29,37 @@ namespace Mathmagician.Tests
         }
 
         [TestMethod]
+        public void PrimesIsPrimeReturnsTrueForKnownPrimes()
+        {
+            //Arrange
+                //This is a list of known primes:
+                // 11, 17, 41, 953, 715225739
+
+            //Act
+            //Assert
+            Assert.IsTrue(Primes.isPrime(11));
+            Assert.IsTrue(Primes.isPrime(17));
+            Assert.IsTrue(Primes.isPrime(41));
+            Assert.IsTrue(Primes.isPrime(953));
+            Assert.IsTrue(Primes.isPrime(715225739));
+        }
+
+        [TestMethod]
+        public void PrimesIsPrimeReturnFalseForKnownUnprimes()
+        {
+            //Arrange
+                //This is a list of known unprimes:
+                // 4, 8, 235, 4678, 90210
+            //Act
+            //Assert
+            Assert.IsFalse(Primes.isPrime(4));
+            Assert.IsFalse(Primes.isPrime(8));
+            Assert.IsFalse(Primes.isPrime(235));
+            Assert.IsFalse(Primes.isPrime(4678));
+            Assert.IsFalse(Primes.isPrime(90210));
+        }
+
+        [TestMethod]
         public void PrimesListPrimesOutputs13EarlyPrimes()
         {
             //Arrange
