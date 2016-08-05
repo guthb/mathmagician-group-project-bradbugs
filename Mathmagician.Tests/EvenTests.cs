@@ -32,7 +32,7 @@ namespace Mathmagician.Tests
         {
             //Arrange
             Even my_even = new Even();
-            List<int> my_list = new List<int>() { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26 };
+            List<int> my_list = new List<int>() { 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24 };
             //Act
             //Assert
             CollectionAssert.AreEqual(my_list, my_even.ReturnEvenNumbersList(13));
