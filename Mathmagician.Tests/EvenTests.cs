@@ -26,5 +26,17 @@ namespace Mathmagician.Tests
             //Assert
             Assert.IsInstanceOfType(my_even.ReturnEvenNumbersList(0), typeof(List<int>));
         }
+
+        [TestMethod]
+        public void EvensListEvensOutputs13EarlyEvens()
+        {
+            //Arrange
+            Even my_even = new Even();
+            List<int> my_list = new List<int>() { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26 };
+            //Act
+            //Assert
+            CollectionAssert.AreEqual(my_list, my_even.ReturnEvenNumbersList(13));
+            
+        }
     }
 }
