@@ -15,7 +15,7 @@ namespace Mathmagician
             List<int> listOdds = new List<int>();
 
 
-           
+            
 
             return listOdds;
             
