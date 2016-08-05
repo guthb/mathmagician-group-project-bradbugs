@@ -10,13 +10,6 @@ namespace Mathmagician
     {
         static void Main(string[] args)
         {
-            Primes myPrime = new Primes();
-            List<int> primeListery = myPrime.ListPrimes(8);
-            for (int i = 0; i < primeListery.Count; i++)
-            {
-                Console.WriteLine(primeListery[i]);
-            }
-            Console.ReadKey();
 
         }
     }

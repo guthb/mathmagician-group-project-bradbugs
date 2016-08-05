@@ -9,7 +9,8 @@ namespace Mathmagician.Tests
         [TestMethod]
         public void EvensAreAbleToBeInstantiated()
         {
-
+            Even my_even = new Even();
+            Assert.IsNotNull(my_even);
         }
     }
 }
