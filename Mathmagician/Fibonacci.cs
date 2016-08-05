@@ -9,36 +9,25 @@ namespace Mathmagician
 {
     public class Fibonacci
     {
-        
-        public static int IsFibonacci(int n)
-        {
-            int a = 0;
-            int b = 1;
-            // In N steps compute Fibonacci sequence iteratively.
-            for (int i = 0; i < n; i++)
-            {
-                int temp = a;
-                a = b;
-                b = temp + b;
-            }
-            return a;
-        }
-
-
         public List<int> ReturnFibonacciSequence(int input)
-
-
         {
             //throw new NotImplementedException();
 
             List<int> _fibonacciSequencList = new List<int>();
+                int a = 0;
+                int b = 1;
+
                 for (int i = 1; i <= input; i++)
                 {
-                    _fibonacciSequencList.Add(IsFibonacci(i));
-                 }
+                    int temp = a;
+                    a = b;
+                    b = temp + b;
+
+                    _fibonacciSequencList.Add(a);
+
+                }
 
             return _fibonacciSequencList;
-
         }
 
 
