@@ -12,15 +12,19 @@ namespace Mathmagician
         {
             
             List<int> _listOdds = new List<int>();
-
-            for (int i = 0; i < input; i++)
+            int i = 0; //limit based on input value
+            int j = 0; //new integer for odd values
+            
+            while (i < input)
             {
-                if (i % 2 == 1)
-                {
-                    _listOdds.Add(i);
-                }
-                    
                 
+                if (j % 2 == 1)
+                {
+                    _listOdds.Add(j);
+                    i++;
+                }
+                j++;    
+               
             }
 
             return _listOdds;
