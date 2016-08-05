@@ -44,12 +44,10 @@ namespace Mathmagician.Tests
 
             //Act
             Odds my_odd_list_integers = new Odds();
-            List<int> testList = new List<int>() { 1, 3, 5, 7, 9, 11, 13};
+            List<int> testList = new List<int>() {1, 3, 5, 7, 9, 11, 13};
 
             //Assert
-            CollectionAssert.AreEqual(testList,my_odd_list_integers.ListOdds(7));
-
-
+            CollectionAssert.AreEqual(testList, my_odd_list_integers.ListOdds(14));
 
         }
         
