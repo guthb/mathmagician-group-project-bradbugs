@@ -8,5 +8,12 @@ namespace Mathmagician
 {
     public class Even
     {
+
+        public List<int> ReturnEvenNumbersList(int userInput)
+        {
+            List<int> my_evens = new List<int>();
+            return my_evens;
+        }
+
     }
 }
