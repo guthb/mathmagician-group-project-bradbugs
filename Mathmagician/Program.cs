@@ -30,19 +30,19 @@ namespace Mathmagician
 
 
 
-                switch (commandInput)
+                switch (commandInput.ToLower())
                 {
-                    case "Integers":
+                    case "integers":
                         Integer my_int = new Integer();
                         List<int> listIntToPrint = my_int.ListIntegers(listAmountParsed);
                         my_int.PrintList(listIntToPrint);
                         break;
-                    case "Primes":
+                    case "primes":
                         Primes my_prime = new Primes();
                         List<int> listPrimeToPrint = my_prime.ReturnPrimeNumbersList(listAmountParsed);
                         my_prime.PrintList(listPrimeToPrint);
                         break;
-                    case "Fibonacci":
+                    case "fibonacci":
                         Fibonacci my_fib = new Fibonacci();
                         List<int> listFibToPrint = my_fib.ReturnFibonacciSequence(listAmountParsed);
                         my_fib.PrintList(listFibToPrint);
