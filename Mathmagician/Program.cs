@@ -37,7 +37,7 @@ namespace Mathmagician
                 //Prompt user for command input.
                 Console.Write("> ");
                 string commandInput = Console.ReadLine();
-                if (commandInput == "shut up")
+                if (commandInput.ToLower() == "shut up")
                 {
                     Environment.Exit(0);
                 }
