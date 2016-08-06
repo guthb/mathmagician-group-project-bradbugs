@@ -91,7 +91,7 @@ namespace Mathmagician
                         break;
                     case "fibonacci":
                         Fibonacci my_fib = new Fibonacci();
-                        List<int> listFibToPrint = my_fib.ReturnFibonacciSequence(listAmountParsed);
+                        List<double> listFibToPrint = my_fib.ReturnFibonacciSequence(listAmountParsed);
                         my_fib.PrintList(listFibToPrint);
                         break;
                     case "even":
