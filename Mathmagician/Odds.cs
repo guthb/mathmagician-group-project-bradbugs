@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mathmagician
 {
-    public class Odds
+    public class Odds : Command
     {
         public List<int> ListOdds(int input)
         {
