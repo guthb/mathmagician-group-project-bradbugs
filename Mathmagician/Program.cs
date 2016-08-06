@@ -53,7 +53,9 @@ namespace Mathmagician
                         my_even.PrintList(listEvenToPrint);
                         break;
                     case "odd":
-                        Console.WriteLine("Under Construction");
+                        Odds my_odds = new Odds();
+                        List<int> listOddToPrint = my_odds.ListOdds(listAmountParsed);
+                        my_odds.PrintList(listOddToPrint);
                         break;
                     default:
                         Console.WriteLine("Whoops!");
