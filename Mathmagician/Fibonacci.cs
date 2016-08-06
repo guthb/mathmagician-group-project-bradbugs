@@ -24,20 +24,10 @@ namespace Mathmagician
                     b = temp + b;
 
                     _fibonacciSequencList.Add(a);
-
                 }
 
             return _fibonacciSequencList;
         }
-
-
-
-
-
-
-        
-
-
    
     }
 }
