@@ -27,13 +27,13 @@ namespace Mathmagician.Tests
         {
             // Arrange
             Fibonacci my_fibo_list = new Fibonacci();
-            List<int> testList = new List<int>();
+            List<double> testList = new List<double>();
 
             //Act
 
 
             //Assert
-            Assert.IsInstanceOfType(my_fibo_list.ReturnFibonacciSequence(0), typeof(List<int>));
+            Assert.IsInstanceOfType(my_fibo_list.ReturnFibonacciSequence(0), typeof(List<double>));
         }
 
         [TestMethod]
@@ -41,7 +41,7 @@ namespace Mathmagician.Tests
         {
             // Arrange
             Fibonacci my_fibo_List = new Fibonacci();
-            List<int> testListCount = new List<int>() { 1, 1, 2, 3, 5, 8, 13, 21 };
+            List<double> testListCount = new List<double>() { 1, 1, 2, 3, 5, 8, 13, 21 };
 
             //Act
 
@@ -58,12 +58,38 @@ namespace Mathmagician.Tests
 
             // Arrange
             Fibonacci fiboList = new Fibonacci();
-            List<int> testList = new List<int>() { 1, 1, 2, 3, 5, 8, 13, 21 };
+            List<double> testList = new List<double>() { 1, 1, 2, 3, 5, 8, 13, 21 };
 
             //Act
             
             //Assert
             CollectionAssert.AreEqual(testList, fiboList.ReturnFibonacciSequence(8));
         }
+
+
+        [TestMethod]
+        //Test the list that the numbers are added correctly
+        public void FibonacciBigOutputTest()
+        {
+            //
+            //
+
+            // Arrange
+            Fibonacci fiboList = new Fibonacci();
+            List<double> testList = fiboList.ReturnFibonacciSequence(60);
+            bool testlast = testList[59] == 1548008755920;
+            
+            //Act
+
+            //Assert
+            Assert.IsTrue( testlast);
+        }
+
+
+
+
+
+
     }
+
 }

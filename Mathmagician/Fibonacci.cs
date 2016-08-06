@@ -9,17 +9,17 @@ namespace Mathmagician
 {
     public class Fibonacci : Command
     {
-        public List<int> ReturnFibonacciSequence(int input)
+        public List<double> ReturnFibonacciSequence(double input)
         {
             //throw new NotImplementedException();
 
-            List<int> _fibonacciSequencList = new List<int>();
-                int a = 0;
-                int b = 1;
+            List<double> _fibonacciSequencList = new List<double>();
+                double a = 0;
+                double b = 1;
 
                 for (int i = 1; i <= input; i++)
                 {
-                    int temp = a;
+                    double temp = a;
                     a = b;
                     b = temp + b;
 
@@ -28,6 +28,15 @@ namespace Mathmagician
 
             return _fibonacciSequencList;
         }
-   
+
+        public void PrintList(List<double> list)
+        {
+            for (int i = 0; i < list.Count; i++)
+            {
+                Console.WriteLine(list[i].ToString());
+            }
+
+        }
+
     }
 }
