@@ -34,7 +34,6 @@ namespace Mathmagician.Tests
 
             //Assert
             Assert.IsInstanceOfType(my_fibo_list.ReturnFibonacciSequence(0), typeof(List<int>));
-
         }
 
         [TestMethod]
@@ -49,7 +48,6 @@ namespace Mathmagician.Tests
 
             //Assert
             Assert.AreEqual(testListCount.Count, my_fibo_List.ReturnFibonacciSequence(8).Count);
-
         }
 
         
@@ -66,9 +64,6 @@ namespace Mathmagician.Tests
             
             //Assert
             CollectionAssert.AreEqual(testList, fiboList.ReturnFibonacciSequence(8));
-
         }
-
-
     }
 }
