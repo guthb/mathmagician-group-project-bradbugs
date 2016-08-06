@@ -52,49 +52,7 @@ namespace Mathmagician.Tests
 
         }
 
-
-        public int fibotest(int a, int b)
-        {
-
-            int temp = a;
-            a = b;
-            b = temp + b;
-            return b;
-        }
-
-        [TestMethod]
-
-        public void FibonacciSequeceTest()
-        {
-
-            // Arrange
-            Fibonacci fiboListSequence = new Fibonacci();
-
-            //Act
-
-            //known fibo pairs
-
-
-            //8 = 5+3
-
-            //13 = 8+5
-
-            //55 = 34+21
-
-            //144 = 89+55
-
-            //317811  121393 + 196418
-
-
-            //Assert
-            Assert.AreEqual(fibotest(5,3), 8);
-            Assert.AreEqual(fibotest(8,5), 13);
-            Assert.AreEqual(fibotest(34,21), 55);
-            Assert.AreEqual(fibotest(89, 55), 144);
-            Assert.AreEqual(fibotest(196418, 121393), 317811);
-        }
-
-
+        
         [TestMethod]
         //Test the list that the numbers are added correctly
         public void FibonacciOutputTest()
