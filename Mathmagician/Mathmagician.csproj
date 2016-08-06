@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Command.cs" />
     <Compile Include="Even.cs" />
+    <Compile Include="Extras\ASCII.cs" />
     <Compile Include="Primes.cs" />
     <Compile Include="Fibonacci.cs" />
     <Compile Include="Integer.cs" />
