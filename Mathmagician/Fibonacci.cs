@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Mathmagician
 {
-    public class Fibonacci
+    public class Fibonacci : Command
     {
         public List<int> ReturnFibonacciSequence(int input)
         {

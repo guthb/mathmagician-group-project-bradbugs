@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mathmagician
 {
-    public class Primes
+    public class Primes : Command
     {
 
         public static bool isPrime(int number)

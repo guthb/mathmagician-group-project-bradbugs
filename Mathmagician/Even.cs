@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mathmagician
 {
-    public class Even
+    public class Even : Command
     {
 
         public List<int> ReturnEvenNumbersList(int userInput)
