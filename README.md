@@ -1,5 +1,12 @@
 # Mathmagician
 
+# Team Name: BradBugs
+
+## Contributors:
+-[Callan Morrison](https://gtihub.com/morecallan)
+-[Bradey Guthrie](https://github.com/guthb)
+
+
 ## Acceptance Criteria
 
 1. Console app that prints out lists of numbers
@@ -33,5 +40,3 @@ Cool, I'm going to print [some amount] [some command] numbers.
 ```
 
 If an unknown command is entered, then the Mathmagician will say, "Whoops!".
-
-
